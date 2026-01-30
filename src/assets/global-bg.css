@@ -1,0 +1,68 @@
+/* Full-screen dark image background */
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  background:
+    linear-gradient(rgba(17,24,39,0.75), rgba(17,24,39,0.75)),
+    url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Do not set global text color to avoid clashing with light containers */
+}
+
+/* Center main containers and cap at 1600px */
+.edit-creator,
+.creator-list,
+form {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center and size text boxes and text areas globally */
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+textarea,
+.form-group input,
+.form-group textarea,
+.edit-form input,
+.edit-form textarea {
+  width: 80% !important;        /* always 80% of container width */
+  max-width: 1280px !important; /* 80% of 1600px */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Make labels align with the centered input column */
+.form-group label,
+.edit-form label {
+  width: 80%;
+  max-width: 1280px;    /* 80% of 1600px */
+  margin: 0 auto 6px;   /* center and add small bottom spacing */
+  display: block;
+  text-align: left;     /* labels stay left-aligned within the centered column */
+}
+
+/* Ensure buttons are centered and spaced */
+.save-button,
+.delete-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 1280px;
+}
+
+.save-button { margin-bottom: 12px; }
+.delete-button { margin-top: 12px; }
+
+/* Optional: consistent group spacing */
+.form-group { margin-bottom: 12px; }

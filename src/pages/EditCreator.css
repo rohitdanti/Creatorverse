@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    width: 100%;
+    min-width: 400px;
+    padding: 20px;
+}
+
+.edit-creator {
+    max-width: 1600px;
+    min-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #e6cccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center; /* ensure inner content is centered */
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-creator h2 {
+    text-align: center; /* center the heading */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;     /* constrain form width */
+    margin: 0 auto;       /* center the form block */
+    align-items: center;  /* center children within the form */
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    align-items: center;   /* center inputs/textarea */
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 600;
+    align-self: flex-start; /* keep labels left-aligned */
+    text-align: left;       /* explicit left alignment */
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    max-width: 720px;      /* prevent full-bleed width */
+    margin: 0 auto;        /* center horizontally */
+    display: block;        /* ensure block-level for centering */
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+}
+
+.save-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    width: 200px;
+    margin: 0 auto;        /* center buttons */
+    display: block;        /* ensure centered in the flow */
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;        /* center buttons */
+    display: block;        /* ensure centered in the flow */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
