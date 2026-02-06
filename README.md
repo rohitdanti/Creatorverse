@@ -38,6 +38,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 https://drive.google.com/file/d/1xTwOjlKpDbatFseebLOgdjgaVUBXChbX/view?usp=drive_link
+
 UPDATED GIF WITH ALL FUNCTIONALITIES: https://drive.google.com/file/d/12DmBMQ4S328OTyQTugGKtj3d6HNpZVpC/view
 
 GIF created with [KAP]
